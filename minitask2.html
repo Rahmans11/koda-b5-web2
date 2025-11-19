@@ -1,83 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="build calendar by css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="build calendar by css" />
     <title>Minitask2</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: azure;
-            color: cyan;
-            float: right;
+        .satu{
+            text-align: justify;
         }
-        .dua, .tiga, .empat, .lima, .enam{
-            display: inline-block;
-            width: "100px";
-            box-sizing: border-box;
-        }
-        /* .tujuh{
-            float: right;
-        }  */
+        .Calendar {
+        border: 2 solid black;
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        align-items: center;
+        color: blue;
+      }
+      .dua,
+      .tiga,
+      .empat,
+      .lima,
+      .enam,
+      .tujuh,
+      .delapan {
+        display: inline-block;
+        display: table-cell;
+        width: "100px";
+        box-sizing: border-box;
+        padding: 8px;
+        background-color: cyan;
+        border-style: ridge;
+        text-align: center;
+        font-size: x-large;
+      }
+      .border{
+        display: table-row;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: aquamarine;
+        color: gray;
+      }
+      main{
+        padding: 10px;
+        margin: 5px;
+        width: 800px;
+        height: 600px;
+      }
     </style>
-</head>
-<body>
-    <div>
-        <h1 class="satu">
-            Calendar of November 2025
-        </h1>
-    </div>
-    <div>
-        <div class="dua">Monnday</div> 
-        <div class="dua">Tuesday</div> 
-        <div class="dua">Wednesday</div> 
-        <div class="dua">Thursday</div> 
-        <div class="dua">Friday</div> 
-        <div class="dua">Saturday</div>
-        <div class="dua">Sunday</div>  
-    </div>
-    <div class="tujuh">
-        1
-    </div>
-    <div>
-        <div class="tiga">2</div>
-        <div class="tiga">3</div>
-        <div class="tiga">4</div>
-        <div class="tiga">5</div>
-        <div class="tiga">6</div>
-        <div class="tiga">7</div>
-        <div class="tiga">8</div>
-    </div>
-    <div>
-        <div class="empat">9</div>
-        <div class="empat">10</div>
-        <div class="empat">11</div>
-        <div class="empat">12</div>
-        <div class="empat">13</div>
-        <div class="empat">14</div>
-        <div class="empat">15</div>
-    </div>
-    <div>
-        <div class="lima">16</div>
-        <div class="lima">17</div>
-        <div class="lima">18</div>
-        <div class="lima">19</div>
-        <div class="lima">20</div>
-        <div class="lima">21</div>
-        <div class="lima">22</div>
-    </div>
-    <div>
-        <div class="enam">23</div>
-        <div class="enam">24</div>
-        <div class="enam">25</div>
-        <div class="enam">26</div>
-        <div class="enam">27</div>
-        <div class="enam">28</div>
-        <div class="enam">29</div>
-    </div>
-    <div class="tujuh">
-        30
-    </div>
-</body>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="satu">Calendar of November 2025</h1>
+      </div>
+    </header>
+    <main>
+      <div class="Calendar">
+        <div class="border">
+          <div class="dua">Monnday</div>
+          <div class="dua">Tuesday</div>
+          <div class="dua">Wednesday</div>
+          <div class="dua">Thursday</div>
+          <div class="dua">Friday</div>
+          <div class="dua">Saturday</div>
+          <div class="dua">Sunday</div>
+        </div>
+        <div class="border">
+            <div class="tiga"></div>    
+            <div class="tiga"></div>
+            <div class="tiga"></div>
+            <div class="tiga"></div>
+            <div class="tiga"></div>
+            <div class="tiga"></div>
+            <div class="tiga">1</div>
+        </div>
+        <div class="border">
+          <div class="empat">2</div>
+          <div class="empat">3</div>
+          <div class="empat">4</div>
+          <div class="empat">5</div>
+          <div class="empat">6</div>
+          <div class="empat">7</div>
+          <div class="empat">8</div>
+        </div>
+        <div class="border">
+          <div class="lima">9</div>
+          <div class="lima">10</div>
+          <div class="lima">11</div>
+          <div class="lima">12</div>
+          <div class="lima">13</div>
+          <div class="lima">14</div>
+          <div class="lima">15</div>
+        </div>
+        <div class="border">
+          <div class="enam">16</div>
+          <div class="enam">17</div>
+          <div class="enam">18</div>
+          <div class="enam">19</div>
+          <div class="enam">20</div>
+          <div class="enam">21</div>
+          <div class="enam">22</div>
+        </div>
+        <div class="border">
+          <div class="tujuh">23</div>
+          <div class="tujuh">24</div>
+          <div class="tujuh">25</div>
+          <div class="tujuh">26</div>
+          <div class="tujuh">27</div>
+          <div class="tujuh">28</div>
+          <div class="tujuh">29</div>
+        </div>
+        <div class="border">
+            <div class="delapan"></div>
+            <div class="delapan"></div>
+            <div class="delapan"></div>
+            <div class="delapan"></div>
+            <div class="delapan"></div>
+            <div class="delapan"></div>
+            <div class="delapan">30</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div>
+            <a href="minitask3.html">minitask3</a>
+        </div>
+        <div>
+            <a href="minitask1.html">minitask1</a>
+        </div>
+    </footer>
+    
+  </body>
 </html>
