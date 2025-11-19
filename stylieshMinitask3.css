@@ -1,0 +1,21 @@
+main{
+    width: 90%;
+    font-size: xx-large;
+    text-align: justify;
+    margin: 4px;
+    padding: 4px;
+}
+.galaxy{
+    text-align: center;
+}
+.Logo{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+a>img{
+    width: 20px;
+}
+footer{
+    text-align: center;
+}
