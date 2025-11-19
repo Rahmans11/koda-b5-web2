@@ -1,0 +1,44 @@
+:root {
+  --bg-primary: red;
+  --bg-secondary: blue;
+  --base-spacing: 3px;
+}
+* {
+  box-sizing: border-box;
+}
+input[type="email"]{
+    border: 3px solid red;
+}
+[data-role="primary"]{
+    border: 3px solid green;
+}
+[data-status="error"]{
+    color: red;
+}
+th, td{
+    border: 1px;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: var(--bg-secondary);
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--bg-primary);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+ul li:nth-child(3n) {
+  background-color: var(--bg-primary);
+}
+ol li:nth-child(3n) {
+  background-color: var(--bg-secondary);
+}
+button:hover{
+    background-color: aqua;
+}
+article>h2~p::first-letter {
+  font-size: 250%;
+}
